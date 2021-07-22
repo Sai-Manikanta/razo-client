@@ -16,8 +16,6 @@ function loadScript(src) {
 	})
 }
 
-const __DEV__ = document.domain === 'localhost'
-
 function App() {
 	const [name, setName] = useState('Mani')
 
@@ -37,7 +35,7 @@ function App() {
 		// console.log(data)
 
 		const options = {
-			key: __DEV__ ? 'rzp_live_lVEs73zpgsvlNu' : 'PRODUCTION_KEY',
+			key: 'rzp_live_lVEs73zpgsvlNu',
 			currency: data.currency,
 			amount: data.amount.toString(),
 			order_id: data.id,
