@@ -29,7 +29,7 @@ function App() {
 			return
 		}
 
-		const data = await fetch('http://localhost:9000/razorpay', { method: 'POST' }).then((t) =>
+		const data = await fetch('https://shielded-inlet-36228.herokuapp.com/razorpay', { method: 'POST' }).then((t) =>
 			t.json()
 		)
 
