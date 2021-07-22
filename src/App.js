@@ -33,8 +33,11 @@ function App() {
 			t.json()
 		)
 
+		// console.log('---order---')
+		// console.log(data)
+
 		const options = {
-			key: __DEV__ ? 'rzp_test_9Gn06P6pqobHOH' : 'PRODUCTION_KEY',
+			key: __DEV__ ? 'rzp_live_lVEs73zpgsvlNu' : 'PRODUCTION_KEY',
 			currency: data.currency,
 			amount: data.amount.toString(),
 			order_id: data.id,
@@ -45,8 +48,8 @@ function App() {
 				// alert(response.razorpay_payment_id)
 				// alert(response.razorpay_order_id)
 				// alert(response.razorpay_signature)
-				console.log('---')
-				console.log(response);
+				console.log('---success capture---')
+				console.log(response)
 			},
 			prefill: {
 				name,
